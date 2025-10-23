@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/buss-page.scss","pages/buss-page.css"],"names":[],"mappings":"AAAA;EACE,kBAAA;ACCF","file":"pages/buss-page.css","sourcesContent":[".buss {\r\n  padding-top: 140px;\r\n}\r\n",".buss {\n  padding-top: 140px;\n}"]}
