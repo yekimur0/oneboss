@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-wrapper">
+        <nav class="header__nav">
+          <ul class="list-reset list">
+            <li>
+              <a class="header__nav-link" href="">Каталог франшиз</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Готовый бизнес</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Инвестиции</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Блог</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">О нас</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Контакты</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Тарифы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__auth auth">
+          <a class="auth__link" href="">Регистрация</a>
+          <a class="auth__link" href="">Вход в личный кабинет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-wrapper">
+        <a class="logo" href="">
+          <img src="../img/logo.webp" alt="OneBoss" />
+          <span
+            >Находим лучшие <br />
+            франшизы</span
+          >
+        </a>
+
+        <div class="header__search" data-search>
+          <input type="text" class="input" placeholder="Я ищу" />
+          <button type="button" class="btn-reset header__search-btn">
+            Найти
+          </button>
+        </div>
+
+        <div class="header__actions">
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#favorite"></use>
+            </svg>
+          </a>
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#stat"></use>
+            </svg>
+          </a>
+
+          <button class="btn-reset header__btn btn--gray" data-open-modal="cb">
+            Заказать звонок
+          </button>
+          <button class="btn-reset header__btn btn--accent" data-open-modal="">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main buss-main">
+      <div class="breadcrumbs">
+  <div class="container">
+    <ul class="list-reset">
+      <li>
+        <a href="">Главная</a>
+      </li>
+
+      <li>
+        <a href="">Каталог</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <section class="buss">
+        <div class="container">
+          <div class="buss__wrapper">
+            <div class="left">
+              <div class="info">
+                <div class="info-title">Информация о бизнесе</div>
+                <nav class="info-nav">
+                  <ul class="list-reset">
+                    <li>
+                      <a class="link" href="">
+                        <svg class="icon">
+                          <use href="img/sprite.svg#money"></use>
+                        </svg>
+                        Стоимость и расчет прибыли
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link" href="">
+                        <svg class="icon">
+                          <use href="img/sprite.svg#home"></use>
+                        </svg>
+                        О франшизе
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link" href="">
+                        <svg class="icon">
+                          <use href="img/sprite.svg#rocket"></use>
+                        </svg>
+                        Условия запуска
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link" href="">
+                        <svg class="icon">
+                          <use href="img/sprite.svg#review"></use>
+                        </svg>
+                        Отзывы
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link" href="">
+                        <svg class="icon">
+                          <use href="img/sprite.svg#faq"></use>
+                        </svg>
+                        Вопросы
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="center">
+              <div class="content">
+                <div class="content-title">Double Bubble Tea — бабл чай</div>
+                <div class="content-slider">
+                  <div class="swiper buss-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide buss-slide">
+                        <div class="buss-slide-image">
+                          <img src="./img/buss-image.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide buss-slide">
+                        <div class="buss-slide-image">
+                          <img src="./img/buss-image.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide buss-slide">
+                        <div class="buss-slide-image">
+                          <img src="./img/buss-image.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide buss-slide">
+                        <div class="buss-slide-image">
+                          <img src="./img/buss-image.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-slider-navigation">
+                    <div class="button-nav prev">
+                      <svg
+                        width="27"
+                        height="15"
+                        viewBox="0 0 27 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M26 8.36395C26.5523 8.36395 27 7.91624 27 7.36395C27 6.81167 26.5523 6.36395 26 6.36395V7.36395V8.36395ZM0.292892 6.65685C-0.0976315 7.04737 -0.0976315 7.68054 0.292892 8.07106L6.65685 14.435C7.04738 14.8255 7.68054 14.8255 8.07107 14.435C8.46159 14.0445 8.46159 13.4113 8.07107 13.0208L2.41421 7.36395L8.07107 1.7071C8.46159 1.31657 8.46159 0.683409 8.07107 0.292885C7.68054 -0.0976396 7.04738 -0.0976396 6.65685 0.292885L0.292892 6.65685ZM26 7.36395V6.36395L1 6.36395V7.36395V8.36395L26 8.36395V7.36395Z"
+                          fill="#246DFF"
+                        />
+                      </svg>
+                    </div>
+                    <div class="pagination-buss"></div>
+                    <div class="button-nav next">
+                      <svg
+                        width="27"
+                        height="15"
+                        viewBox="0 0 27 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 8.36395C0.447715 8.36395 0 7.91624 0 7.36395C0 6.81167 0.447715 6.36395 1 6.36395L1 7.36395L1 8.36395ZM26.7071 6.65685C27.0976 7.04737 27.0976 7.68054 26.7071 8.07106L20.3431 14.435C19.9526 14.8255 19.3195 14.8255 18.9289 14.435C18.5384 14.0445 18.5384 13.4113 18.9289 13.0208L24.5858 7.36395L18.9289 1.7071C18.5384 1.31657 18.5384 0.683409 18.9289 0.292885C19.3195 -0.0976396 19.9526 -0.0976396 20.3431 0.292885L26.7071 6.65685ZM1 7.36395L1 6.36395L26 6.36395V7.36395V8.36395L1 8.36395L1 7.36395Z"
+                          fill="#246DFF"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-text">
+                  <p>
+                    Сеть самых известных чайных и кофейных напитков с яркими,
+                    веселыми и вкусными наполнителями. На рынке +5 лет, открыто
+                    53 фирменных точки и кафе в разных городах от Питера до
+                    Омска, прямые поставки сырья из Китая, +100 вариантов
+                    напитков и десертов в меню.
+                  </p>
+
+                  <p>
+                    Партнёр получает финмодель, экономику, обучение бизнесу,
+                    обучение линейного персонала, стратегию, инструкции,
+                    торжественное открытие, маркетинг запуска и полноформатную
+                    поддержку от целой команды. Чистая прибыль — от 350 000
+                    рублей в месяц, запуск за 26 дней, срок полной окупаемости —
+                    8 месяцев.
+                  </p>
+                </div>
+
+                <div class="content-chars">
+                  <div class="content-chars-title">Характеристики бизнеса</div>
+
+                  <div class="chars-block">
+                    <div class="chars-block-title">Местоположение</div>
+
+                    <div class="chars-block-items">
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#planet"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Город</span>
+                          Москва
+                        </p>
+                      </div>
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#address"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Адрес</span>
+                          Ленинский проспект, 43а
+                        </p>
+                      </div>
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#metro"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Метро</span>
+                          По запросу
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chars-block">
+                    <div class="chars-block-title">Финансы</div>
+
+                    <div class="chars-block-items">
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#planet"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Город</span>
+                          Москва
+                        </p>
+                      </div>
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#address"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Адрес</span>
+                          Ленинский проспект, 43а
+                        </p>
+                      </div>
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#metro"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Метро</span>
+                          По запросу
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chars-block">
+                    <div class="chars-block-title">Штат компании</div>
+
+                    <div class="chars-block-items">
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#planet"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Город</span>
+                          Москва
+                        </p>
+                      </div>
+                      <div class="chars-block-item">
+                        <div class="chars-block-item-icon">
+                          <svg>
+                            <use href="img/sprite.svg#address"></use>
+                          </svg>
+                        </div>
+                        <p>
+                          <span>Адрес</span>
+                          Ленинский проспект, 43а
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-about">
+                  <div class="content-title">Описаниеи компании</div>
+                  <div class="content-text">
+                    <p>
+                      Сеть самых известных чайных и кофейных напитков с яркими,
+                      веселыми и вкусными наполнителями. На рынке +5 лет,
+                      открыто 53 фирменных точки и кафе в разных городах от
+                      Питера до Омска, прямые поставки сырья из Китая, +100
+                      вариантов напитков и десертов в меню.
+                    </p>
+
+                    <p>
+                      Партнёр получает финмодель, экономику, обучение бизнесу,
+                      обучение линейного персонала, стратегию, инструкции,
+                      торжественное открытие, маркетинг запуска и полноформатную
+                      поддержку от целой команды. Чистая прибыль — от 350 000
+                      рублей в месяц, запуск за 26 дней, срок полной окупаемости
+                      — 8 месяцев.
+                    </p>
+                  </div>
+                  <img src="./img/photo.webp" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="buss-cart">
+                <div class="buss-cart-price">6 000 000 р</div>
+                <ul class="list-reset buss-cart-list">
+                  <li class="buss-cart-li"><span>Доходность:</span> 60%</li>
+                  <li class="buss-cart-li">
+                    <span>Прибыль:</span> 1 400 000 р/мес
+                  </li>
+                  <li class="buss-cart-li">
+                    <span>Окупаемость:</span> 29 месяцев
+                  </li>
+                </ul>
+
+                <div class="buss-cart-actions">
+                  <button
+                    class="btn-reset buss-cart-actions-btn"
+                    data-action-add="favorite"
+                  >
+                    <svg
+                      style="pointer-events: none"
+                      width="19"
+                      height="17"
+                      viewBox="0 0 19 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.7051 0.5C13.779 0.5 13.8522 0.500844 13.9238 0.501953C15.5252 0.526753 16.8097 1.39598 17.6113 2.71582C18.4172 4.04286 18.7218 5.81237 18.3301 7.55859C17.9009 9.47145 16.4086 11.3341 14.6914 12.9102C12.9881 14.4734 11.1326 15.6931 10.0869 16.3311C9.71764 16.5563 9.28236 16.5563 8.91309 16.3311C7.86737 15.6931 6.01186 14.4734 4.30859 12.9102C2.59141 11.3341 1.09909 9.47145 0.669922 7.55859C0.27817 5.81237 0.582793 4.04286 1.38867 2.71582C2.19029 1.39598 3.4748 0.526753 5.07617 0.501953C5.14782 0.500844 5.221 0.5 5.29492 0.5C6.58096 0.500144 7.76676 1.18417 8.49707 1.72656C9.08811 2.16519 9.91189 2.1652 10.5029 1.72656C11.2332 1.18417 12.419 0.500145 13.7051 0.5Z"
+                        stroke="#246DFF"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="btn-reset buss-cart-actions-btn"
+                    data-action-add="stat"
+                  >
+                    <svg
+                      width="15"
+                      height="18"
+                      viewBox="0 0 15 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 5.90039H4.16699C5.23578 5.90058 6.1668 6.84797 6.16699 8.09961V15.2998C6.16699 16.5516 5.23589 17.4998 4.16699 17.5H2.5C1.43097 17.5 0.5 16.5518 0.5 15.2998V8.09961L0.510742 7.86914C0.616868 6.73332 1.49774 5.90039 2.5 5.90039ZM10.833 0.5H12.5C13.569 0.5 14.5 1.44824 14.5 2.7002V15.2998C14.5 16.5518 13.569 17.5 12.5 17.5H10.833C9.76411 17.4998 8.83301 16.5516 8.83301 15.2998V2.7002C8.83301 1.44836 9.76411 0.500192 10.833 0.5Z"
+                        stroke="#246DFF"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn-reset buss-cart-actions-btn-docs">
+                    Запросить пакет документов
+                  </button>
+                </div>
+
+                <div class="buss-cart-cb">
+                  <div class="buss-cart-cb-head">
+                    <div class="photo">
+                      <img src="./img/icons/photo-ivan.webp" alt="" />
+                    </div>
+                    <div class="name">
+                      Иван Иванович <span>Представитель собственника</span>
+                    </div>
+                  </div>
+
+                  <button class="btn-reset btn btn-callback">Связаться</button>
+                  <button class="btn-reset btn btn-bussines">
+                    $ Проверить бизнес $
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="buss-cb">
+        <div class="buss-cb__bg" aria-hidden="true">
+          <img src="./img/buss-cb-image.webp" alt="" />
+        </div>
+        <div class="container">
+          <h2 class="buss-cb__title">Консультация представителя</h2>
+          <p class="buss-cb__desc">
+            Оставьте номер телефона, чтобы в течение 40 минут вам перезвонил
+            представитель франшизы Double Bubble Tea
+          </p>
+
+          <form class="form-buss">
+            <div class="form-buss-row">
+              <input type="text" placeholder="Email" class="input" />
+              <input type="text" placeholder="Telegram" class="input" />
+              <button type="submit" class="btn-reset btn form-buss__btn">
+                Отправить заявку
+              </button>
+            </div>
+
+            <div class="policy">
+              <input type="checkbox" />
+              <label for=""
+                >*Нажимая на кнопку «Отправить заявку», вы соглашаетесь на <a
+                  href=""
+                  >обработку персональных данных</a
+                ></label
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="buss-variants">
+        <div class="container">
+          <h2 class="title__section buss-variants__title">Похожие бизнесы</h2>
+
+          <div class="buss-variants__items">
+            <article class="cart buss-variants__cart">
+              <a class="cart__image" href="">
+                <img src="../img/cart-img.webp" alt="" />
+              </a>
+
+              <div class="cart__project">
+                <div class="logo">
+                  <img src="../img/logo-project.svg" alt="Pedant" />
+                </div>
+                <div class="info">
+                  <a href="">Pedant.ru</a>
+                  <p>Франшиза сети сервисных центров</p>
+                </div>
+              </div>
+
+              <div class="cart__content">
+                <p class="cart__text">
+                  Инвестиции: <span>От 600 000р</span>
+                </p>
+                <p class="cart__text">Прибыль: <span>1 400 000 р/мес</span></p>
+
+                <div class="cart__content-action">
+                  <p class="cart__text">Окупаемость: <span>29 месяцев</span></p>
+
+                  <div class="actions">
+                    <button class="btn-reset actions__btn">
+                      <svg>
+                        <use href="img/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#stat"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#send"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="cart buss-variants__cart">
+              <a class="cart__image" href="">
+                <img src="../img/cart-img.webp" alt="" />
+              </a>
+
+              <div class="cart__project">
+                <div class="logo">
+                  <img src="../img/logo-project.svg" alt="Pedant" />
+                </div>
+                <div class="info">
+                  <a href="">Pedant.ru</a>
+                  <p>Франшиза сети сервисных центров</p>
+                </div>
+              </div>
+
+              <div class="cart__content">
+                <p class="cart__text">
+                  Инвестиции: <span>От 600 000р</span>
+                </p>
+                <p class="cart__text">Прибыль: <span>1 400 000 р/мес</span></p>
+
+                <div class="cart__content-action">
+                  <p class="cart__text">Окупаемость: <span>29 месяцев</span></p>
+
+                  <div class="actions">
+                    <button class="btn-reset actions__btn">
+                      <svg>
+                        <use href="img/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#stat"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#send"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="cart buss-variants__cart">
+              <a class="cart__image" href="">
+                <img src="../img/cart-img.webp" alt="" />
+              </a>
+
+              <div class="cart__project">
+                <div class="logo">
+                  <img src="../img/logo-project.svg" alt="Pedant" />
+                </div>
+                <div class="info">
+                  <a href="">Pedant.ru</a>
+                  <p>Франшиза сети сервисных центров</p>
+                </div>
+              </div>
+
+              <div class="cart__content">
+                <p class="cart__text">
+                  Инвестиции: <span>От 600 000р</span>
+                </p>
+                <p class="cart__text">Прибыль: <span>1 400 000 р/мес</span></p>
+
+                <div class="cart__content-action">
+                  <p class="cart__text">Окупаемость: <span>29 месяцев</span></p>
+
+                  <div class="actions">
+                    <button class="btn-reset actions__btn">
+                      <svg>
+                        <use href="img/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#stat"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#send"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="cart buss-variants__cart">
+              <a class="cart__image" href="">
+                <img src="../img/cart-img.webp" alt="" />
+              </a>
+
+              <div class="cart__project">
+                <div class="logo">
+                  <img src="../img/logo-project.svg" alt="Pedant" />
+                </div>
+                <div class="info">
+                  <a href="">Pedant.ru</a>
+                  <p>Франшиза сети сервисных центров</p>
+                </div>
+              </div>
+
+              <div class="cart__content">
+                <p class="cart__text">
+                  Инвестиции: <span>От 600 000р</span>
+                </p>
+                <p class="cart__text">Прибыль: <span>1 400 000 р/мес</span></p>
+
+                <div class="cart__content-action">
+                  <p class="cart__text">Окупаемость: <span>29 месяцев</span></p>
+
+                  <div class="actions">
+                    <button class="btn-reset actions__btn">
+                      <svg>
+                        <use href="img/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#stat"></use>
+                      </svg>
+                    </button>
+                    <button class="actions__btn btn-reset">
+                      <svg>
+                        <use href="img/sprite.svg#send"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <ul class="list-reset buss-variants__tags">
+            <li>
+              <button class="btn-reset tag active">С прибылью</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Есть команда</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Не дорогие</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Со скидкой</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Для женщин</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Без роялти</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Популярные</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Домашний бизнес</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Для маленького города</button>
+            </li>
+            <li>
+              <button class="btn-reset tag">Новинки</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="buss-subscribe">
+        <div class="container">
+          <div class="buss-subscribe__wrapper">
+            <div class="col">
+              <h2 class="title__section buss-subscribe__title">
+                Подпишитесь на подборку франшиз <span>со схожей тематики</span>
+              </h2>
+
+              <div class="buss-subscribe__desc">
+                <svg>
+                  <use href="img/sprite.svg#home"></use>
+                </svg>
+                Подборка
+              </div>
+            </div>
+            <div class="col col-form">
+              <div class="image">
+                <img src="./img/mail-img.svg" alt="" />
+              </div>
+
+              <form class="form-subscribe">
+                <input type="text" placeholder="Email" class="input" />
+                <button type="submit" class="btn-reset btn form-subscribe__btn">
+                  Подписаться
+                </button>
+                <div class="policy">
+                  <input type="checkbox" />
+                  <label for=""
+                    >*Нажимая на кнопку «Подписаться», вы соглашаетесь на <a
+                      href=""
+                      >обработку персональных данных</a
+                    ></label
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="col">
+              <div class="sub-image">
+                <img src="./img/sub-image.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__heading">
+            <a class="logo" href="">
+              <img src="../img/logo.webp" alt="OneBoss" />
+              <span
+                >Заполните форму и мы поможем с выбором индивидуальной программы
+              </span>
+            </a>
+
+            <ul class="list-reset list">
+              <li>ОГРН: 1037816009340</li>
+              <li>ИНН: 7806039990</li>
+              <li>КПП: 780601001</li>
+            </ul>
+          </div>
+
+          <div class="footer__row">
+            <div class="footer__menu">
+              <div class="footer__menu-title">Инвестиции</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Инвестиции в стартапы</a>
+                  </li>
+                  <li>
+                    <a href="">Инвестиции в бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Финансовые инвестиции</a>
+                  </li>
+                  <li>
+                    <a href="">Краткосрочные инвестиции</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Франшизы</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Недорогие</a>
+                  </li>
+                  <li>
+                    <a href="">Для начинающих</a>
+                  </li>
+                  <li>
+                    <a href="">С быстрой окупаемостью</a>
+                  </li>
+                  <li>
+                    <a href="">Популярные</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">О сервисе</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">О нас</a>
+                  </li>
+                  <li>
+                    <a href="">Блог</a>
+                  </li>
+                  <li>
+                    <a href="">Разместить предложение</a>
+                  </li>
+                  <li>
+                    <a href="">Купить франшизу/бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Готовый бизнес</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Малый бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Крупный бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">С минимальными вложениями</a>
+                  </li>
+                  <li>
+                    <a href="">Стартап</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a href="" class="btn footer__catalog">
+            Каталог франшиз
+            <svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 10.5C0.671573 10.5 0 11.1716 0 12C0 12.8284 0.671573 13.5 1.5 13.5V12V10.5ZM32.5607 13.0607C33.1464 12.4749 33.1464 11.5251 32.5607 10.9393L23.0147 1.3934C22.4289 0.807611 21.4792 0.807611 20.8934 1.3934C20.3076 1.97919 20.3076 2.92893 20.8934 3.51472L29.3787 12L20.8934 20.4853C20.3076 21.0711 20.3076 22.0208 20.8934 22.6066C21.4792 23.1924 22.4289 23.1924 23.0147 22.6066L32.5607 13.0607ZM1.5 12V13.5H31.5V12V10.5H1.5V12Z"
+                fill="#5A86FD"
+              />
+            </svg>
+          </a>
+
+          <div class="footer__socials">
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </span>
+              WhatsApp
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </span>
+              Telegram
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#send"></use>
+                </svg>
+              </span>
+              sanc@sanc.spb.ru
+            </a>
+          </div>
+
+          <div class="footer__subscribe">
+            <p>Подпишитесь на наш канал в Telegram</p>
+            <a class="btn footer__subscribe-btn" href="">Подписаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-row">
+        <p>© 2009 — 2025 zu.ru ООО «САНК»</p>
+        <a href="">Политика конфиденциальности</a>
+        <a href="">Разработка сайта <span>DKA-MEDIA</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

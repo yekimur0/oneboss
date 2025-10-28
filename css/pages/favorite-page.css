@@ -1,0 +1,104 @@
+.favorite-hero {
+  margin-bottom: 80px;
+}
+.favorite-hero .inner {
+  background: #f8f8f8;
+  border-radius: 20px;
+  position: relative;
+  padding: clamp(15px, 3vw, 30px);
+}
+.favorite-hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .favorite-hero .content {
+    max-width: 600px;
+  }
+}
+.favorite-hero .content .breadcrumbs {
+  margin-bottom: clamp(40px, 4.5vw, 70px);
+}
+.favorite-hero .image {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  max-width: 325px;
+}
+.favorite-hero .image img {
+  display: block;
+}
+@media (max-width: 992px) {
+  .favorite-hero .image {
+    display: none;
+  }
+}
+
+.offer-favorite {
+  background: transparent;
+  padding: 0;
+}
+.offer-favorite h2 {
+  font-size: clamp(22px, 3vw, 30px);
+}
+
+.viewers-items {
+  margin-bottom: 100px;
+}
+.viewers-items__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: var(--gray);
+  margin: 0;
+  margin-bottom: 30px;
+}
+.viewers-items__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+}
+.viewers-items__items .item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  max-width: 285px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  gap: 10px;
+}
+.viewers-items__items .item .content p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: var(--gray);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.viewers-items__items .item .content span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+}
+/*# sourceMappingURL=favorite-page.css.map */
