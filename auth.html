@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-wrapper">
+        <nav class="header__nav">
+          <ul class="list-reset list">
+            <li>
+              <a class="header__nav-link" href="">Каталог франшиз</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Готовый бизнес</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Инвестиции</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Блог</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">О нас</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Контакты</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Тарифы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__auth auth">
+          <a class="auth__link" href="">Регистрация</a>
+          <a class="auth__link" href="">Вход в личный кабинет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-wrapper">
+        <a class="logo" href="">
+          <img src="../img/logo.webp" alt="OneBoss" />
+          <span
+            >Находим лучшие <br />
+            франшизы</span
+          >
+        </a>
+
+        <div class="header__search" data-search>
+          <input type="text" class="input" placeholder="Я ищу" />
+          <button type="button" class="btn-reset header__search-btn">
+            Найти
+          </button>
+        </div>
+
+        <div class="header__actions">
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#favorite"></use>
+            </svg>
+          </a>
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#stat"></use>
+            </svg>
+          </a>
+
+          <button class="btn-reset header__btn btn--gray" data-open-modal="cb">
+            Заказать звонок
+          </button>
+          <button class="btn-reset header__btn btn--accent" data-open-modal="">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+  <div class="container">
+    <ul class="list-reset">
+      <li>
+        <a href="">Главная</a>
+      </li>
+
+      <li>
+        <a href="">Каталог</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <div class="auth-block">
+        <div class="container">
+          <div class="auth-form">
+            <div class="auth-form__actions">
+              <button class="btn-reset btn register active">
+                <svg>
+                  <use href="img/sprite.svg#register"></use>
+                </svg>
+                Зарегестрироваться
+              </button>
+              <button class="btn-reset btn to-auth">
+                <svg>
+                  <use href="img/sprite.svg#auth"></use>
+                </svg>
+                Войти
+              </button>
+            </div>
+            <div class="auth-form__title">
+              Зарегестрируйтесь и получите доступ к личному кабинету
+            </div>
+            <form class="form-auth" action="">
+              <input type="text" class="input" placeholder="Имя" />
+              <input type="text" class="input" placeholder="Email" />
+              <input type="password" class="input" placeholder="Пароль" />
+
+              <button class="btn-reset btn form-auth__btn">Регистрация</button>
+              <div class="policy">
+                Регистрируясь и совершая вход Вы принимаете условия
+                <a href="">пользовательского соглашения</a>. Ваши данные в
+                безопасности.
+              </div>
+
+              <button class="btn-reset btn auth-google">
+                Войти через Google
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__heading">
+            <a class="logo" href="">
+              <img src="../img/logo.webp" alt="OneBoss" />
+              <span
+                >Заполните форму и мы поможем с выбором индивидуальной программы
+              </span>
+            </a>
+
+            <ul class="list-reset list">
+              <li>ОГРН: 1037816009340</li>
+              <li>ИНН: 7806039990</li>
+              <li>КПП: 780601001</li>
+            </ul>
+          </div>
+
+          <div class="footer__row">
+            <div class="footer__menu">
+              <div class="footer__menu-title">Инвестиции</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Инвестиции в стартапы</a>
+                  </li>
+                  <li>
+                    <a href="">Инвестиции в бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Финансовые инвестиции</a>
+                  </li>
+                  <li>
+                    <a href="">Краткосрочные инвестиции</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Франшизы</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Недорогие</a>
+                  </li>
+                  <li>
+                    <a href="">Для начинающих</a>
+                  </li>
+                  <li>
+                    <a href="">С быстрой окупаемостью</a>
+                  </li>
+                  <li>
+                    <a href="">Популярные</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">О сервисе</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">О нас</a>
+                  </li>
+                  <li>
+                    <a href="">Блог</a>
+                  </li>
+                  <li>
+                    <a href="">Разместить предложение</a>
+                  </li>
+                  <li>
+                    <a href="">Купить франшизу/бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Готовый бизнес</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Малый бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Крупный бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">С минимальными вложениями</a>
+                  </li>
+                  <li>
+                    <a href="">Стартап</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a href="" class="btn footer__catalog">
+            Каталог франшиз
+            <svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 10.5C0.671573 10.5 0 11.1716 0 12C0 12.8284 0.671573 13.5 1.5 13.5V12V10.5ZM32.5607 13.0607C33.1464 12.4749 33.1464 11.5251 32.5607 10.9393L23.0147 1.3934C22.4289 0.807611 21.4792 0.807611 20.8934 1.3934C20.3076 1.97919 20.3076 2.92893 20.8934 3.51472L29.3787 12L20.8934 20.4853C20.3076 21.0711 20.3076 22.0208 20.8934 22.6066C21.4792 23.1924 22.4289 23.1924 23.0147 22.6066L32.5607 13.0607ZM1.5 12V13.5H31.5V12V10.5H1.5V12Z"
+                fill="#5A86FD"
+              />
+            </svg>
+          </a>
+
+          <div class="footer__socials">
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </span>
+              WhatsApp
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </span>
+              Telegram
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#send"></use>
+                </svg>
+              </span>
+              sanc@sanc.spb.ru
+            </a>
+          </div>
+
+          <div class="footer__subscribe">
+            <p>Подпишитесь на наш канал в Telegram</p>
+            <a class="btn footer__subscribe-btn" href="">Подписаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-row">
+        <p>© 2009 — 2025 zu.ru ООО «САНК»</p>
+        <a href="">Политика конфиденциальности</a>
+        <a href="">Разработка сайта <span>DKA-MEDIA</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

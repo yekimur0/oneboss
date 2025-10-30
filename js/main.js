@@ -14679,11 +14679,45 @@ if (isExist('#select-other')) {
     }
   });
 }
+if (isExist('#bussiness')) {
+  new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    select: '#bussiness',
+    settings: {
+      showSearch: false
+    }
+  });
+}
+if (isExist('#cat')) {
+  new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    select: '#cat',
+    settings: {
+      showSearch: false
+    }
+  });
+}
+if (isExist('#invest')) {
+  new slim_select__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    select: '#invest',
+    settings: {
+      showSearch: false
+    }
+  });
+}
 document.body.addEventListener('click', e => {
   let target = e.target;
-  console.log(target);
   if (target.dataset.accordion) initAccordion(target);
+  if (target.classList.contains('compare__nav-btn')) tabComare(target);
 });
+const tabComare = target => {
+  const currentId = target.dataset.compare;
+  const element = document.querySelector(`[data-compare-tab="${currentId}"]`);
+  const activEl = document.querySelector('.compare__tab.isActive');
+  const activeBtn = document.querySelector('.compare__nav-btn.active');
+  if (activEl) activEl.classList.remove('isActive');
+  element.classList.add('isActive');
+  if (activeBtn) activeBtn.classList.remove('active');
+  target.classList.add('active');
+};
 const initAccordion = target => {
   target.classList.toggle('faq__item--active');
 };
@@ -14755,6 +14789,30 @@ if (isExist('.about-reviews-swiper')) {
     navigation: {
       prevEl: '.about-reviews__nav-btn.prev',
       nextEl: '.about-reviews__nav-btn.next'
+    }
+  });
+}
+if (isExist('.compare-swiper')) {
+  const c_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.compare-swiper', {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    navigation: {
+      prevEl: '.compare-slider-nav-btn.prev',
+      nextEl: '.compare-slider-nav-btn.next'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3.5
+      },
+      1024: {
+        slidesPerView: 4
+      },
+      1200: {
+        slidesPerView: 5
+      }
     }
   });
 }

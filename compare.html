@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-wrapper">
+        <nav class="header__nav">
+          <ul class="list-reset list">
+            <li>
+              <a class="header__nav-link" href="">Каталог франшиз</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Готовый бизнес</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Инвестиции</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Блог</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">О нас</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Контакты</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="">Тарифы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__auth auth">
+          <a class="auth__link" href="">Регистрация</a>
+          <a class="auth__link" href="">Вход в личный кабинет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-wrapper">
+        <a class="logo" href="">
+          <img src="../img/logo.webp" alt="OneBoss" />
+          <span
+            >Находим лучшие <br />
+            франшизы</span
+          >
+        </a>
+
+        <div class="header__search" data-search>
+          <input type="text" class="input" placeholder="Я ищу" />
+          <button type="button" class="btn-reset header__search-btn">
+            Найти
+          </button>
+        </div>
+
+        <div class="header__actions">
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#favorite"></use>
+            </svg>
+          </a>
+          <a class="icon-wrapper" href="">
+            <svg class="icon">
+              <use href="img/sprite.svg#stat"></use>
+            </svg>
+          </a>
+
+          <button class="btn-reset header__btn btn--gray" data-open-modal="cb">
+            Заказать звонок
+          </button>
+          <button class="btn-reset header__btn btn--accent" data-open-modal="">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main compare-main">
+      <section class="hero-compare">
+        <div class="container">
+          <div class="hero-compare__inner">
+            <div class="hero-compare__content">
+              <div class="breadcrumbs">
+                <ul class="list-reset">
+                  <li>
+                    <a href="">Главная</a>
+                  </li>
+
+                  <li>
+                    <a href="">Каталог</a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="hero-compare__title">Сравнение</h1>
+              <p class="hero-compare__desc">
+                Статьи, бизнес идеи и свежие новости франчайзинга от экспертов
+                команды Бизнесменс.ру
+              </p>
+            </div>
+
+            <div class="hero-compare__image">
+              <img src="./img/compare-image.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare">
+        <div class="container">
+          <div class="compare__header">
+            <div class="compare__nav">
+              <button
+                type="button"
+                data-compare="business"
+                class="btn-reset compare__nav-btn active"
+              >
+                Готовый бизнес
+              </button>
+              <button
+                type="button"
+                data-compare="franch"
+                class="btn-reset compare__nav-btn"
+              >
+                Франшизы
+              </button>
+              <button
+                type="button"
+                data-compare="invest"
+                class="btn-reset compare__nav-btn"
+              >
+                Инвестиции
+              </button>
+            </div>
+
+            <div class="compare-slider-nav">
+              <div class="compare-slider-nav-btn prev">
+                <svg>
+                  <use href="img/sprite.svg#arrow-prev"></use>
+                </svg>
+              </div>
+              <div class="compare-slider-nav-btn next">
+                <svg>
+                  <use href="img/sprite.svg#arrow-next"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare__tabs">
+            <div class="compare__tab isActive" data-compare-tab="business">
+              <div class="compare__slider">
+                <div class="swiper compare-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide compare__slide">
+                      <div class="compare__slide-about">
+                        <button aria-label="Удалить" class="btn-reset btn-del">
+                          <svg
+                            pointer-events="none"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 10C20 6.26154 20 4.3923 19.1962 3C18.6695 2.08788 17.9121 1.33046 17 0.803847C15.6077 0 13.7385 0 10 0C6.26154 0 4.3923 0 3 0.803847C2.08788 1.33046 1.33046 2.08788 0.803847 3C0 4.3923 0 6.26154 0 10C0 13.7385 0 15.6077 0.803847 17C1.33046 17.9121 2.08788 18.6695 3 19.1962C4.3923 20 6.26154 20 10 20C13.7385 20 15.6077 20 17 19.1962C17.9121 18.6695 18.6695 17.9121 19.1962 17C20 15.6077 20 13.7385 20 10ZM7.7019 6.64124C7.409 6.34835 6.93413 6.34835 6.64124 6.64124C6.34834 6.93414 6.34834 7.40901 6.64124 7.7019L8.93933 10L6.64124 12.2981C6.34834 12.591 6.34834 13.0659 6.64124 13.3588C6.93413 13.6517 7.409 13.6517 7.7019 13.3588L9.99999 11.0607L12.2981 13.3588C12.591 13.6517 13.0659 13.6517 13.3588 13.3588C13.6516 13.0659 13.6516 12.591 13.3588 12.2981L11.0607 10L13.3588 7.7019C13.6516 7.40901 13.6516 6.93414 13.3588 6.64124C13.0659 6.34835 12.591 6.34835 12.2981 6.64124L9.99999 8.93934L7.7019 6.64124Z"
+                              fill="#246DFF"
+                            />
+                          </svg>
+                        </button>
+                        <div class="logo">
+                          <img src="./img/zenitka.webp" alt="" />
+                        </div>
+                        <div class="title">Зенит-Чемпионика</div>
+                        <div class="desc">
+                          Франшиза детской футбольной школы «Зенит-Чемпионика»
+                        </div>
+                      </div>
+
+                      <ul class="list-reset list">
+                        <li>
+                          <span>Стартовые инвестиции</span>
+                          <p>От 475 000 тыс</p>
+                        </li>
+
+                        <li>
+                          <span>Паушальный взнос</span>
+                          <p>От 315 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Роялти</span>
+                          <p>8%</p>
+                        </li>
+                        <li>
+                          <span>Оборот в месяц</span>
+                          <p>850 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Год открытия компании</span>
+                          <p>2020 год</p>
+                        </li>
+                        <li>
+                          <span>Кол-во собственных точек</span>
+                          <p>3</p>
+                        </li>
+                        <li>
+                          <span>Торговый знак</span>
+                          <p>Да</p>
+                        </li>
+                        <li>
+                          <span>0 отзывов</span>
+                        </li>
+                      </ul>
+
+                      <div class="actions">
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn"
+                        >
+                          Оставить заявку
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn disable"
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide compare__slide">
+                      <div class="compare__slide-about">
+                        <button aria-label="Удалить" class="btn-reset btn-del">
+                          <svg
+                            pointer-events="none"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 10C20 6.26154 20 4.3923 19.1962 3C18.6695 2.08788 17.9121 1.33046 17 0.803847C15.6077 0 13.7385 0 10 0C6.26154 0 4.3923 0 3 0.803847C2.08788 1.33046 1.33046 2.08788 0.803847 3C0 4.3923 0 6.26154 0 10C0 13.7385 0 15.6077 0.803847 17C1.33046 17.9121 2.08788 18.6695 3 19.1962C4.3923 20 6.26154 20 10 20C13.7385 20 15.6077 20 17 19.1962C17.9121 18.6695 18.6695 17.9121 19.1962 17C20 15.6077 20 13.7385 20 10ZM7.7019 6.64124C7.409 6.34835 6.93413 6.34835 6.64124 6.64124C6.34834 6.93414 6.34834 7.40901 6.64124 7.7019L8.93933 10L6.64124 12.2981C6.34834 12.591 6.34834 13.0659 6.64124 13.3588C6.93413 13.6517 7.409 13.6517 7.7019 13.3588L9.99999 11.0607L12.2981 13.3588C12.591 13.6517 13.0659 13.6517 13.3588 13.3588C13.6516 13.0659 13.6516 12.591 13.3588 12.2981L11.0607 10L13.3588 7.7019C13.6516 7.40901 13.6516 6.93414 13.3588 6.64124C13.0659 6.34835 12.591 6.34835 12.2981 6.64124L9.99999 8.93934L7.7019 6.64124Z"
+                              fill="#246DFF"
+                            />
+                          </svg>
+                        </button>
+                        <div class="logo">
+                          <img src="./img/zenitka.webp" alt="" />
+                        </div>
+                        <div class="title">Зенит-Чемпионика</div>
+                        <div class="desc">
+                          Франшиза детской футбольной школы «Зенит-Чемпионика»
+                        </div>
+                      </div>
+
+                      <ul class="list-reset list">
+                        <li>
+                          <span>Стартовые инвестиции</span>
+                          <p>От 475 000 тыс</p>
+                        </li>
+
+                        <li>
+                          <span>Паушальный взнос</span>
+                          <p>От 315 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Роялти</span>
+                          <p>8%</p>
+                        </li>
+                        <li>
+                          <span>Оборот в месяц</span>
+                          <p>850 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Год открытия компании</span>
+                          <p>2020 год</p>
+                        </li>
+                        <li>
+                          <span>Кол-во собственных точек</span>
+                          <p>3</p>
+                        </li>
+                        <li>
+                          <span>Торговый знак</span>
+                          <p>Да</p>
+                        </li>
+                        <li>
+                          <span>0 отзывов</span>
+                        </li>
+                      </ul>
+
+                      <div class="actions">
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn"
+                        >
+                          Оставить заявку
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn disable"
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide compare__slide">
+                      <div class="compare__slide-about">
+                        <button aria-label="Удалить" class="btn-reset btn-del">
+                          <svg
+                            pointer-events="none"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 10C20 6.26154 20 4.3923 19.1962 3C18.6695 2.08788 17.9121 1.33046 17 0.803847C15.6077 0 13.7385 0 10 0C6.26154 0 4.3923 0 3 0.803847C2.08788 1.33046 1.33046 2.08788 0.803847 3C0 4.3923 0 6.26154 0 10C0 13.7385 0 15.6077 0.803847 17C1.33046 17.9121 2.08788 18.6695 3 19.1962C4.3923 20 6.26154 20 10 20C13.7385 20 15.6077 20 17 19.1962C17.9121 18.6695 18.6695 17.9121 19.1962 17C20 15.6077 20 13.7385 20 10ZM7.7019 6.64124C7.409 6.34835 6.93413 6.34835 6.64124 6.64124C6.34834 6.93414 6.34834 7.40901 6.64124 7.7019L8.93933 10L6.64124 12.2981C6.34834 12.591 6.34834 13.0659 6.64124 13.3588C6.93413 13.6517 7.409 13.6517 7.7019 13.3588L9.99999 11.0607L12.2981 13.3588C12.591 13.6517 13.0659 13.6517 13.3588 13.3588C13.6516 13.0659 13.6516 12.591 13.3588 12.2981L11.0607 10L13.3588 7.7019C13.6516 7.40901 13.6516 6.93414 13.3588 6.64124C13.0659 6.34835 12.591 6.34835 12.2981 6.64124L9.99999 8.93934L7.7019 6.64124Z"
+                              fill="#246DFF"
+                            />
+                          </svg>
+                        </button>
+                        <div class="logo">
+                          <img src="./img/zenitka.webp" alt="" />
+                        </div>
+                        <div class="title">Зенит-Чемпионика</div>
+                        <div class="desc">
+                          Франшиза детской футбольной школы «Зенит-Чемпионика»
+                        </div>
+                      </div>
+
+                      <ul class="list-reset list">
+                        <li>
+                          <span>Стартовые инвестиции</span>
+                          <p>От 475 000 тыс</p>
+                        </li>
+
+                        <li>
+                          <span>Паушальный взнос</span>
+                          <p>От 315 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Роялти</span>
+                          <p>8%</p>
+                        </li>
+                        <li>
+                          <span>Оборот в месяц</span>
+                          <p>850 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Год открытия компании</span>
+                          <p>2020 год</p>
+                        </li>
+                        <li>
+                          <span>Кол-во собственных точек</span>
+                          <p>3</p>
+                        </li>
+                        <li>
+                          <span>Торговый знак</span>
+                          <p>Да</p>
+                        </li>
+                        <li>
+                          <span>0 отзывов</span>
+                        </li>
+                      </ul>
+
+                      <div class="actions">
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn"
+                        >
+                          Оставить заявку
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn disable"
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide compare__slide">
+                      <div class="compare__slide-about">
+                        <button aria-label="Удалить" class="btn-reset btn-del">
+                          <svg
+                            pointer-events="none"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 10C20 6.26154 20 4.3923 19.1962 3C18.6695 2.08788 17.9121 1.33046 17 0.803847C15.6077 0 13.7385 0 10 0C6.26154 0 4.3923 0 3 0.803847C2.08788 1.33046 1.33046 2.08788 0.803847 3C0 4.3923 0 6.26154 0 10C0 13.7385 0 15.6077 0.803847 17C1.33046 17.9121 2.08788 18.6695 3 19.1962C4.3923 20 6.26154 20 10 20C13.7385 20 15.6077 20 17 19.1962C17.9121 18.6695 18.6695 17.9121 19.1962 17C20 15.6077 20 13.7385 20 10ZM7.7019 6.64124C7.409 6.34835 6.93413 6.34835 6.64124 6.64124C6.34834 6.93414 6.34834 7.40901 6.64124 7.7019L8.93933 10L6.64124 12.2981C6.34834 12.591 6.34834 13.0659 6.64124 13.3588C6.93413 13.6517 7.409 13.6517 7.7019 13.3588L9.99999 11.0607L12.2981 13.3588C12.591 13.6517 13.0659 13.6517 13.3588 13.3588C13.6516 13.0659 13.6516 12.591 13.3588 12.2981L11.0607 10L13.3588 7.7019C13.6516 7.40901 13.6516 6.93414 13.3588 6.64124C13.0659 6.34835 12.591 6.34835 12.2981 6.64124L9.99999 8.93934L7.7019 6.64124Z"
+                              fill="#246DFF"
+                            />
+                          </svg>
+                        </button>
+                        <div class="logo">
+                          <img src="./img/zenitka.webp" alt="" />
+                        </div>
+                        <div class="title">Зенит-Чемпионика</div>
+                        <div class="desc">
+                          Франшиза детской футбольной школы «Зенит-Чемпионика»
+                        </div>
+                      </div>
+
+                      <ul class="list-reset list">
+                        <li>
+                          <span>Стартовые инвестиции</span>
+                          <p>От 475 000 тыс</p>
+                        </li>
+
+                        <li>
+                          <span>Паушальный взнос</span>
+                          <p>От 315 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Роялти</span>
+                          <p>8%</p>
+                        </li>
+                        <li>
+                          <span>Оборот в месяц</span>
+                          <p>850 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Год открытия компании</span>
+                          <p>2020 год</p>
+                        </li>
+                        <li>
+                          <span>Кол-во собственных точек</span>
+                          <p>3</p>
+                        </li>
+                        <li>
+                          <span>Торговый знак</span>
+                          <p>Да</p>
+                        </li>
+                        <li>
+                          <span>0 отзывов</span>
+                        </li>
+                      </ul>
+
+                      <div class="actions">
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn"
+                        >
+                          Оставить заявку
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn disable"
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide compare__slide">
+                      <div class="compare__slide-about">
+                        <button aria-label="Удалить" class="btn-reset btn-del">
+                          <svg
+                            pointer-events="none"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 10C20 6.26154 20 4.3923 19.1962 3C18.6695 2.08788 17.9121 1.33046 17 0.803847C15.6077 0 13.7385 0 10 0C6.26154 0 4.3923 0 3 0.803847C2.08788 1.33046 1.33046 2.08788 0.803847 3C0 4.3923 0 6.26154 0 10C0 13.7385 0 15.6077 0.803847 17C1.33046 17.9121 2.08788 18.6695 3 19.1962C4.3923 20 6.26154 20 10 20C13.7385 20 15.6077 20 17 19.1962C17.9121 18.6695 18.6695 17.9121 19.1962 17C20 15.6077 20 13.7385 20 10ZM7.7019 6.64124C7.409 6.34835 6.93413 6.34835 6.64124 6.64124C6.34834 6.93414 6.34834 7.40901 6.64124 7.7019L8.93933 10L6.64124 12.2981C6.34834 12.591 6.34834 13.0659 6.64124 13.3588C6.93413 13.6517 7.409 13.6517 7.7019 13.3588L9.99999 11.0607L12.2981 13.3588C12.591 13.6517 13.0659 13.6517 13.3588 13.3588C13.6516 13.0659 13.6516 12.591 13.3588 12.2981L11.0607 10L13.3588 7.7019C13.6516 7.40901 13.6516 6.93414 13.3588 6.64124C13.0659 6.34835 12.591 6.34835 12.2981 6.64124L9.99999 8.93934L7.7019 6.64124Z"
+                              fill="#246DFF"
+                            />
+                          </svg>
+                        </button>
+                        <div class="logo">
+                          <img src="./img/zenitka.webp" alt="" />
+                        </div>
+                        <div class="title">Зенит-Чемпионика</div>
+                        <div class="desc">
+                          Франшиза детской футбольной школы «Зенит-Чемпионика»
+                        </div>
+                      </div>
+
+                      <ul class="list-reset list">
+                        <li>
+                          <span>Стартовые инвестиции</span>
+                          <p>От 475 000 тыс</p>
+                        </li>
+
+                        <li>
+                          <span>Паушальный взнос</span>
+                          <p>От 315 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Роялти</span>
+                          <p>8%</p>
+                        </li>
+                        <li>
+                          <span>Оборот в месяц</span>
+                          <p>850 000 тыс</p>
+                        </li>
+                        <li>
+                          <span>Год открытия компании</span>
+                          <p>2020 год</p>
+                        </li>
+                        <li>
+                          <span>Кол-во собственных точек</span>
+                          <p>3</p>
+                        </li>
+                        <li>
+                          <span>Торговый знак</span>
+                          <p>Да</p>
+                        </li>
+                        <li>
+                          <span>0 отзывов</span>
+                        </li>
+                      </ul>
+
+                      <div class="actions">
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn"
+                        >
+                          Оставить заявку
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-reset btn actions__btn disable"
+                        >
+                          Удалить
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="compare__tab" data-compare-tab="franch">
+              Тут пока пусто.
+            </div>
+            <div class="compare__tab" data-compare-tab="invest">
+              Здесь тоже пусто.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__heading">
+            <a class="logo" href="">
+              <img src="../img/logo.webp" alt="OneBoss" />
+              <span
+                >Заполните форму и мы поможем с выбором индивидуальной программы
+              </span>
+            </a>
+
+            <ul class="list-reset list">
+              <li>ОГРН: 1037816009340</li>
+              <li>ИНН: 7806039990</li>
+              <li>КПП: 780601001</li>
+            </ul>
+          </div>
+
+          <div class="footer__row">
+            <div class="footer__menu">
+              <div class="footer__menu-title">Инвестиции</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Инвестиции в стартапы</a>
+                  </li>
+                  <li>
+                    <a href="">Инвестиции в бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Финансовые инвестиции</a>
+                  </li>
+                  <li>
+                    <a href="">Краткосрочные инвестиции</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Франшизы</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Недорогие</a>
+                  </li>
+                  <li>
+                    <a href="">Для начинающих</a>
+                  </li>
+                  <li>
+                    <a href="">С быстрой окупаемостью</a>
+                  </li>
+                  <li>
+                    <a href="">Популярные</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">О сервисе</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">О нас</a>
+                  </li>
+                  <li>
+                    <a href="">Блог</a>
+                  </li>
+                  <li>
+                    <a href="">Разместить предложение</a>
+                  </li>
+                  <li>
+                    <a href="">Купить франшизу/бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__menu">
+              <div class="footer__menu-title">Готовый бизнес</div>
+
+              <nav class="nav">
+                <ul class="list-reset list">
+                  <li>
+                    <a href="">Малый бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">Крупный бизнес</a>
+                  </li>
+                  <li>
+                    <a href="">С минимальными вложениями</a>
+                  </li>
+                  <li>
+                    <a href="">Стартап</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a href="" class="btn footer__catalog">
+            Каталог франшиз
+            <svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.5 10.5C0.671573 10.5 0 11.1716 0 12C0 12.8284 0.671573 13.5 1.5 13.5V12V10.5ZM32.5607 13.0607C33.1464 12.4749 33.1464 11.5251 32.5607 10.9393L23.0147 1.3934C22.4289 0.807611 21.4792 0.807611 20.8934 1.3934C20.3076 1.97919 20.3076 2.92893 20.8934 3.51472L29.3787 12L20.8934 20.4853C20.3076 21.0711 20.3076 22.0208 20.8934 22.6066C21.4792 23.1924 22.4289 23.1924 23.0147 22.6066L32.5607 13.0607ZM1.5 12V13.5H31.5V12V10.5H1.5V12Z"
+                fill="#5A86FD"
+              />
+            </svg>
+          </a>
+
+          <div class="footer__socials">
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </span>
+              WhatsApp
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </span>
+              Telegram
+            </a>
+            <a href="">
+              <span class="icon-wrapper">
+                <svg class="icon">
+                  <use href="img/sprite.svg#send"></use>
+                </svg>
+              </span>
+              sanc@sanc.spb.ru
+            </a>
+          </div>
+
+          <div class="footer__subscribe">
+            <p>Подпишитесь на наш канал в Telegram</p>
+            <a class="btn footer__subscribe-btn" href="">Подписаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-row">
+        <p>© 2009 — 2025 zu.ru ООО «САНК»</p>
+        <a href="">Политика конфиденциальности</a>
+        <a href="">Разработка сайта <span>DKA-MEDIA</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
